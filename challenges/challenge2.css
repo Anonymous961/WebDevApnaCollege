@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+.heading h1{
+    color: green;
+    text-align: center;
+}
+#main{
+    text-align: center;
+}
+.box{
+    float: left;
+    padding: 2rem;
+    margin: 0;
+    background-color: gray;
+    border: 10%;
+    border-radius: 20px;
+}
+@media all and (max-width:320px) {
+    .box{
+        width: 100%;
+        margin:2px
+    }
+}
+@media all and (max-width:640px) and (min-width:321px){
+    .box{
+        width:46%;
+        margin: 2px;
+    }
+}
+@media screen and (min-width:640px) {
+    .box{
+        width: 22%;
+        margin: 2px;
+        margin-left: 10px;
+        float: left;
+    }
+}

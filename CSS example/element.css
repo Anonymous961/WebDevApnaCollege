@@ -1,0 +1,19 @@
+body h1+p .special{
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+}
+p{
+    color: brown;
+}
+li{
+    list-style-type:square;
+}
+li.special,span.special{
+    color: orange;
+    font:bold;
+}
+a:hover{
+    color: saddlebrown;
+    text-decoration: none;
+}

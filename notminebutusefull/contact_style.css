@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Sora', sans-serif;
+}
+
+.girl {
+  overflow: hidden;
+  display: flex;
+  margin-right: 6vh;
+}
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  padding-left: 30vh;
+}
+
+.bg-image {
+  background-image: url("https://i.ibb.co/pj8L5vd/background.png");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: hsla(300, 64%, 95%, 1);
+  width: 400px;
+  border-radius: 10px;
+  overflow: auto;
+  -webkit-box-shadow: 0px 0px 40px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 40px 9px rgba(0, 0, 0, 0.5);
+  margin: 2vh;
+}
+
+.head {
+  background: #bbd9fa;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+
+.head h1,
+p {
+  text-align: center;
+}
+
+.head p {
+  font-size: 12px;
+}
+
+label {
+  margin-left: 20px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin: 5px 20px 20px 20px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid rgb(0, 132, 255);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.button {
+  outline: none;
+  background: #bbd9fa;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  margin: 10px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.button:hover:before {
+  right: 0%;
+  left: auto;
+  width: 100%;
+}
+.button:before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 0px;
+  z-index: -1;
+  content: "";
+  background: linear-gradient(to right, #ffae009a, #f9e866);
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: #ffcf69;
+  text-shadow: nfour;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.socialbtns {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -20vh;
+  bottom: 35vh;
+}
+.socialbtns a {
+  text-decoration: none;
+  color: rgba(31, 0, 31, 0.609);
+  padding-right: 1vh;
+}
+@media screen and (max-width: 500px) {
+  body {
+    border: 0;
+    padding: 0;
+    display: inline-flexbox;
+     align-items: center;
+  }
+
+  form {
+    width: 100vh; 
+ margin-right:10vh;
+  }
+  .girl {
+    visibility: collapse;
+  }
+  .socialbtns{
+    visibility: collapse;
+  }
+}

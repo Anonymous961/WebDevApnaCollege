@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 100px 200px; */
+            /* grid-template-rows: 200px 100px 200px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: repeat(4,1fr); */
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+            grid-gap: 20px;
+            /* grid-auto-rows: 100px; */
+            grid-auto-rows: minmax(100px,auto);
+            /* grid-auto-columns: 50px; */
+            grid-auto-columns: minmax(50px,auto);
+        }
+        .items{
+            background-color: lightcoral;
+            border: 3px solid green;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quia eaque culpa eius, fugit dignissimos expedita non ad consequatur explicabo. Quos aliquam veniam dolore maiores blanditiis voluptate tempora eos, omnis praesentium optio fugit, iusto officiis beatae ipsum eveniet exercitationem quaerat repellendus totam quisquam libero consequuntur commodi culpa perspiciatis delectus. Veritatis maxime temporibus tempore molestias ducimus optio neque est ut quo repellat quidem sit autem saepe vitae illo, esse obcaecati nesciunt ipsum ad incidunt totam reiciendis ea. Illum dignissimos dolores assumenda molestias? Iusto voluptates perspiciatis consequatur incidunt dolor adipisci maiores blanditiis quas quisquam aperiam est rem architecto, reprehenderit quae dicta, ab ipsam illo quidem. Qui, sequi alias quibusdam repudiandae possimus labore eum totam quisquam optio, eaque ut? Adipisci, nobis ullam soluta saepe minima quidem ex id veritatis necessitatibus odit ut fuga excepturi, qui aperiam sequi? Unde exercitationem iste ipsum quasi enim, eveniet officia in dolore corporis quidem molestiae ab perspiciatis voluptatem nesciunt nulla reiciendis eaque! Est asperiores ratione dignissimos. Amet autem facere, sint ex et illum laboriosam quam asperiores blanditiis quae accusamus architecto quo dolorem consequatur maiores neque unde voluptatibus, cumque itaque expedita libero soluta praesentium totam. Consequuntur porro qui officia laborum eligendi atque provident tenetur tempore aut? Laborum, natus aperiam?</div> -->
+        <div class="items">Dabba 1</div>
+        <div class="items">Dabba 2</div>
+        <div class="items">Dabba 3</div>
+        <div class="items">Dabba 4</div>
+        <div class="items">Dabba 5</div>
+    </div>
+</body>
+</html>
